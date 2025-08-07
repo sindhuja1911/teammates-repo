@@ -1,0 +1,15 @@
+# .github/workflows/poster-uploaded.yml
+name: Poster Upload Notification
+
+on:
+  push:
+    paths:
+      - 'C:\Users\sindh\OneDrive\Desktop\DevOps\friends Travel Poster.png'   # trigger only when poster is changed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Poster Upload Message
+        run: echo " Poster Uploaded Successfully!" >> $GITHUB_STEP_SUMMARY
