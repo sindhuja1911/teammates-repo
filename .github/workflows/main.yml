@@ -4,7 +4,8 @@ name: friends Travel Poster
 on:
   push:
     paths:
-      - 'C:\Users\sindh\OneDrive\Desktop\DevOps\friends Travel Poster.png'   # trigger only when poster is changed
+      - paths:
+  - "assets/friends Travel Poster.png"   # trigger only when poster is changed
 
 jobs:
   notify:
