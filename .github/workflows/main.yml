@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - paths:
-  - "assets/friends Travel Poster.png"   # trigger only when poster is changed
+  - "friends Travel Poster.png"   # trigger only when poster is changed
 
 jobs:
   notify:
